@@ -86,10 +86,8 @@ years.forEach(element=>{
 })
 
 let year = document.querySelectorAll('.year');
-console.log(year)
 year.forEach(element=>{
     element.addEventListener('click',()=>{
-        console.log(element.id)
         switch (element.id) {
             case '2024':
                 buildEvent(list2024)
@@ -97,6 +95,8 @@ year.forEach(element=>{
             case '2023':
                 buildEvent(list2023)
                 break;
+            case 'inicio':
+                buildEvent(list2024)
             default:
                 break;
         }
